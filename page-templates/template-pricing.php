@@ -12,7 +12,7 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 
-	if ( blush_is_elementor_page() ) {
+	if ( blush_has_elementor_content() ) {
 		?>
 		<div class="elementor-page-content">
 			<?php the_content(); ?>

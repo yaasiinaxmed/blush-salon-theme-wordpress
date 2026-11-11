@@ -49,6 +49,38 @@ function blush_is_elementor_page( $post_id = null ) {
 }
 
 /**
+ * Check if the post has actual Elementor widgets/content saved.
+ *
+ * @param int|null $post_id Optional. Post ID.
+ * @return bool
+ */
+function blush_has_elementor_content( $post_id = null ) {
+	if ( ! $post_id ) {
+		$post_id = get_the_ID();
+	}
+	if ( ! $post_id ) {
+		return false;
+	}
+
+	$raw_data = get_post_meta( $post_id, '_elementor_data', true );
+	if ( empty( $raw_data ) ) {
+		return false;
+	}
+
+	if ( is_string( $raw_data ) ) {
+		$trimmed = trim( $raw_data );
+		if ( '[]' === $trimmed || '""' === $trimmed || '' === $trimmed ) {
+			return false;
+		}
+		$data = json_decode( $raw_data, true );
+		return is_array( $data ) && ! empty( $data );
+	}
+
+	return is_array( $raw_data ) && ! empty( $raw_data );
+}
+
+
+/**
  * Register Elementor Pro locations (Header, Footer, Single, Archive).
  *
  * @param \ElementorPro\Modules\ThemeBuilder\Classes\Locations_Manager $elementor_theme_manager Theme manager instance.

@@ -5,12 +5,12 @@
  * @package Blush_Salon
  */
 
-if ( '' === trim( (string) get_post_field( 'post_content', get_the_ID() ) ) ) {
+if ( ! blush_has_elementor_content() && '' === trim( (string) get_post_field( 'post_content', get_the_ID() ) ) ) {
 	return;
 }
 ?>
 <section class="section section--tight">
-	<div class="container container--narrow entry-content">
+	<div class="container <?php echo blush_has_elementor_content() ? 'container--full' : 'container--narrow'; ?> entry-content">
 		<?php the_content(); ?>
 	</div>
 </section>
