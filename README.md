@@ -4,11 +4,13 @@
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-777BB4.svg?logo=php&logoColor=white)](https://php.net)
 [![Elementor Compatible](https://img.shields.io/badge/Elementor-Ready-92003B.svg?logo=elementor&logoColor=white)](https://elementor.com)
 [![License: GPL v2](https://img.shields.io/badge/License-GPLv2-green.svg)](LICENSE)
-[![Theme Version](https://img.shields.io/badge/Version-1.1.0-pink.svg)](style.css)
+[![Theme Version](https://img.shields.io/badge/Version-1.2.0-pink.svg)](style.css)
 
 > **Blush Salon** is an elegant, modern, and high-performance WordPress theme designed specifically for beauty salons, luxury spas, nail bars, hair stylists, aesthetic clinics, and wellness studios.
 
 Featuring a soft pink aesthetic, native AJAX appointment booking, one-click demo content setup, and **full Elementor page builder compatibility**.
+
+![Blush Salon theme preview](docs/theme-preview.png)
 
 ---
 

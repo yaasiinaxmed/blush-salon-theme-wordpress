@@ -52,7 +52,7 @@ jobs:
         run: |
           mkdir -p /tmp/build/blush-salon
           rsync -a \
-            --exclude='.git' --exclude='.github' --exclude='.gitignore' \
+            --exclude='.git' --exclude='.github' --exclude='.gitignore' --exclude='docs' \
             --exclude='.DS_Store' --exclude='*.zip' --exclude='node_modules' \
             --exclude='CODE_OF_CONDUCT.md' --exclude='CONTRIBUTING.md' \
             ./ /tmp/build/blush-salon/
