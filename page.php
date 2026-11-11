@@ -9,7 +9,7 @@ get_header();
 
 while ( have_posts() ) :
 	the_post();
-	if ( blush_is_elementor_page() ) {
+	if ( blush_is_builder_page() ) {
 		?>
 		<div class="elementor-page-content">
 			<?php the_content(); ?>

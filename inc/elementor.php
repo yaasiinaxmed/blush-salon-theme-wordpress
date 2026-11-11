@@ -9,13 +9,50 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/* ==========================================================================
+   Page builder detection (Elementor, Beaver Builder, Divi, WPBakery,
+   SiteOrigin, Brizy, Bricks, Oxygen and the block editor)
+   ========================================================================== */
+
 /**
- * Check if the given post (or current queried post) was built with or is being edited in Elementor.
+ * Is any page builder's visual editor / live preview running right now?
+ *
+ * While a builder editor is open the template MUST call the_content(),
+ * otherwise the builder cannot find its content area.
+ *
+ * @return bool
+ */
+function blush_is_builder_editing() {
+	$editing = false;
+
+	// Elementor.
+	if ( class_exists( '\Elementor\Plugin' ) && isset( \Elementor\Plugin::$instance->preview ) && \Elementor\Plugin::$instance->preview->is_preview_mode() ) {
+		$editing = true;
+	}
+
+	// Query-string flags used by the builders' front-end editors / previews.
+	$flags = array( 'elementor-preview', 'fl_builder', 'et_fb', 'vc_editable', 'vc_action', 'brizy-edit', 'brizy-edit-iframe', 'ct_builder', 'bricks', 'siteorigin_panels_live_editor' );
+	foreach ( $flags as $flag ) {
+		if ( isset( $_GET[ $flag ] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			$editing = true;
+			break;
+		}
+	}
+
+	if ( ! $editing && class_exists( 'FLBuilderModel' ) && method_exists( 'FLBuilderModel', 'is_builder_active' ) && FLBuilderModel::is_builder_active() ) {
+		$editing = true;
+	}
+
+	return (bool) apply_filters( 'blush_is_builder_editing', $editing );
+}
+
+/**
+ * Does the post contain content that was designed with a page builder?
  *
  * @param int|null $post_id Optional. Post ID.
  * @return bool
  */
-function blush_is_elementor_page( $post_id = null ) {
+function blush_has_builder_content( $post_id = null ) {
 	if ( ! $post_id ) {
 		$post_id = get_the_ID();
 	}
@@ -23,62 +60,97 @@ function blush_is_elementor_page( $post_id = null ) {
 		return false;
 	}
 
-	// 1. Elementor editor / preview mode
-	if ( class_exists( '\Elementor\Plugin' ) ) {
-		if ( isset( \Elementor\Plugin::$instance->preview ) && \Elementor\Plugin::$instance->preview->is_preview_mode( $post_id ) ) {
-			return true;
+	$has = false;
+
+	// Elementor.
+	$raw = get_post_meta( $post_id, '_elementor_data', true );
+	if ( is_string( $raw ) ) {
+		$trimmed = trim( $raw );
+		if ( '' !== $trimmed && '[]' !== $trimmed && '""' !== $trimmed ) {
+			$decoded = json_decode( $raw, true );
+			$has     = is_array( $decoded ) && ! empty( $decoded );
 		}
-		if ( isset( \Elementor\Plugin::$instance->db ) && method_exists( \Elementor\Plugin::$instance->db, 'is_built_with_elementor' ) ) {
-			if ( \Elementor\Plugin::$instance->db->is_built_with_elementor( $post_id ) ) {
-				return true;
+	} elseif ( is_array( $raw ) && ! empty( $raw ) ) {
+		$has = true;
+	}
+
+	// Beaver Builder.
+	if ( ! $has && get_post_meta( $post_id, '_fl_builder_enabled', true ) && get_post_meta( $post_id, '_fl_builder_data', true ) ) {
+		$has = true;
+	}
+
+	// Divi (stores shortcodes in post_content).
+	$content = (string) get_post_field( 'post_content', $post_id );
+	if ( ! $has && 'on' === get_post_meta( $post_id, '_et_pb_use_builder', true ) && '' !== trim( $content ) ) {
+		$has = true;
+	}
+
+	// WPBakery.
+	if ( ! $has && ( false !== strpos( $content, '[vc_row' ) || false !== strpos( $content, '[vc_section' ) ) ) {
+		$has = true;
+	}
+
+	// SiteOrigin Page Builder.
+	if ( ! $has && get_post_meta( $post_id, 'panels_data', true ) ) {
+		$has = true;
+	}
+
+	// Brizy.
+	if ( ! $has && get_post_meta( $post_id, 'brizy_post_uid', true ) && get_post_meta( $post_id, 'brizy', true ) ) {
+		$has = true;
+	}
+
+	// Bricks.
+	if ( ! $has && get_post_meta( $post_id, '_bricks_page_content_2', true ) ) {
+		$has = true;
+	}
+
+	return (bool) apply_filters( 'blush_has_builder_content', $has, $post_id );
+}
+
+/**
+ * Is this page owned by a page builder (designed with one, or being edited in one)?
+ *
+ * @param int|null $post_id Optional. Post ID.
+ * @return bool
+ */
+function blush_is_builder_page( $post_id = null ) {
+	return blush_is_builder_editing() || blush_has_builder_content( $post_id );
+}
+
+/**
+ * Backwards-compatible aliases (kept for child themes).
+ */
+function blush_is_elementor_page( $post_id = null ) {
+	return blush_is_builder_page( $post_id );
+}
+
+function blush_has_elementor_content( $post_id = null ) {
+	return blush_has_builder_content( $post_id );
+}
+
+/**
+ * The static front page must honour a page template chosen in the editor.
+ *
+ * WordPress always prefers front-page.php over a selected page template, which
+ * would stop "Elementor Full Width" (or any other template) from working on Home.
+ *
+ * @param string $template Resolved template path.
+ * @return string
+ */
+function blush_front_page_respect_template( $template ) {
+	if ( is_front_page() && is_page() && basename( $template ) === 'front-page.php' ) {
+		$slug = get_page_template_slug();
+		if ( $slug && 'front-page.php' !== $slug ) {
+			$located = locate_template( $slug );
+			if ( $located ) {
+				return $located;
 			}
 		}
 	}
-
-	// 2. Post meta check
-	if ( 'builder' === get_post_meta( $post_id, '_elementor_edit_mode', true ) ) {
-		return true;
-	}
-
-	// 3. Query string check (when entering Elementor editor / preview)
-	if ( isset( $_GET['elementor-preview'] ) || ( isset( $_GET['action'] ) && 'elementor' === $_GET['action'] ) ) {
-		return true;
-	}
-
-	return false;
+	return $template;
 }
-
-/**
- * Check if the post has actual Elementor widgets/content saved.
- *
- * @param int|null $post_id Optional. Post ID.
- * @return bool
- */
-function blush_has_elementor_content( $post_id = null ) {
-	if ( ! $post_id ) {
-		$post_id = get_the_ID();
-	}
-	if ( ! $post_id ) {
-		return false;
-	}
-
-	$raw_data = get_post_meta( $post_id, '_elementor_data', true );
-	if ( empty( $raw_data ) ) {
-		return false;
-	}
-
-	if ( is_string( $raw_data ) ) {
-		$trimmed = trim( $raw_data );
-		if ( '[]' === $trimmed || '""' === $trimmed || '' === $trimmed ) {
-			return false;
-		}
-		$data = json_decode( $raw_data, true );
-		return is_array( $data ) && ! empty( $data );
-	}
-
-	return is_array( $raw_data ) && ! empty( $raw_data );
-}
-
+add_filter( 'template_include', 'blush_front_page_respect_template' );
 
 /**
  * Register Elementor Pro locations (Header, Footer, Single, Archive).
@@ -97,8 +169,9 @@ add_action( 'elementor/theme/register_locations', 'blush_register_elementor_loca
  * @return array
  */
 function blush_elementor_body_classes( $classes ) {
-	if ( blush_is_elementor_page() ) {
+	if ( is_singular() && blush_is_builder_page() ) {
 		$classes[] = 'blush-elementor-active';
+		$classes[] = 'blush-builder-active';
 		$classes[] = 'blush-full-width';
 	}
 	return $classes;
