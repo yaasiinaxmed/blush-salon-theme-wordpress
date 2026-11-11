@@ -162,3 +162,18 @@ Releases are automated with GitHub Actions (`.github/workflows/release.yml`).
 3. The workflow lints the PHP, builds `blush-salon.zip`, creates the tag `vX.Y.Z` and publishes a GitHub Release using that changelog entry as notes.
 
 If the tag for the current version already exists, the push is skipped (no duplicate release).
+
+## Using page builders
+
+The theme works with Elementor, Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks.
+
+| I want to... | Do this |
+| :--- | :--- |
+| Keep the theme's demo layout and add my own content | Keep the template (Front Page, About, Services, Pricing, Contact) and open the page in your builder. Your widgets appear in the content area between the demo sections. |
+| Design a page entirely with my builder | Set the page Template to **Elementor Full Width**, or use the default page template, then open it in your builder. |
+| Replace the demo layout on a designed template | Save content in your builder. Once a page has builder content, it shows only that content, edge to edge. |
+| Add salon modules inside a builder | Use a Shortcode widget: `[blush_booking_form]`, `[blush_services]`, `[blush_pricing]`, `[blush_team]`, `[blush_testimonials]`, `[blush_faqs]`, `[blush_contact_form]` |
+
+The home page honours the Template chosen in Page Attributes, so **Elementor Full Width** works on Home too.
+
+Developers: use the `blush_has_builder_content` and `blush_is_builder_editing` filters to add support for another builder.
