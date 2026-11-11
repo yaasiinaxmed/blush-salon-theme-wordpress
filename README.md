@@ -21,12 +21,6 @@ Featuring a soft pink aesthetic, native AJAX appointment booking, one-click demo
 
 ---
 
-## 📸 Preview
-
-![Blush Salon Theme Preview](screenshot.png)
-
----
-
 ## 🚀 Key Features
 
 ### 🎨 1. Full Elementor Page Builder Compatibility
