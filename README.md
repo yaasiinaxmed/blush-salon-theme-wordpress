@@ -29,7 +29,8 @@ Featuring a soft pink aesthetic, native AJAX appointment booking, one-click demo
 ## 🚀 Key Features
 
 ### 🎨 1. Full Elementor Page Builder Compatibility
-- **Edit Any Page with Elementor:** Open the Home page, About, Services, Pricing, or Contact templates directly inside Elementor. The pre-coded sections gracefully yield to Elementor's visual canvas.
+- **Edit Any Page with Elementor:** Open the Home, About, Services, Pricing or Contact pages in Elementor and the demo layout loads as real, editable widgets: headings, text, buttons, icons and images.
+- **Works with Other Page Builders:** Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks are detected automatically.
 - **Elementor Full Width Template:** Create custom edge-to-edge landing pages with header and footer preserved.
 - **Elementor Pro Ready:** Built-in support for Elementor Pro Theme Builder locations (`header`, `footer`, `single`, `archive`).
 
@@ -52,6 +53,32 @@ Featuring a soft pink aesthetic, native AJAX appointment booking, one-click demo
 ### 🔒 5. Privacy & GDPR Compliant
 - **Locally Hosted Web Fonts:** Google Fonts (*Domine* and *Inter*) are served directly from the theme's local assets. Zero data is leaked to external Google servers.
 - **Native Inline SVGs:** Clean, fast vector icons without external icon font bloat.
+
+---
+
+## 🏗️ Using Page Builders
+
+The theme works with Elementor, Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks.
+
+### Editing the demo layouts in Elementor
+
+Open a page that uses a designed template (Home, About, Services, Pricing, Contact) in Elementor for the first time. The theme loads that page's layout as real Elementor containers and widgets, so you can click and edit it:
+
+- Hero, About, CTA banner, Why Choose Us, Video banner, Vision/Mission/Motto: headings, text, buttons, icons and **images (background and collage images)** are all editable in Elementor.
+- Dynamic sections are Shortcode widgets, because their content lives in the WordPress admin: Services, Pricing Plans, Team, Testimonials, FAQs (edit under their menus; change a person's photo with the Featured Image), the booking and contact forms, partner logos and the map.
+- Nothing is saved until you click **Publish / Update**. If you leave without publishing, the page is unchanged.
+- After you publish, the page shows your Elementor content. To get the original layout back, delete all content in Elementor, publish, and reopen the page.
+
+### Other options
+
+| I want to... | Do this |
+| :--- | :--- |
+| Design a page from scratch | Set the page Template to **Elementor Full Width** (or use the default page template), then open it in your builder. |
+| Add salon modules inside a builder | Use a Shortcode widget: `[blush_booking_form]`, `[blush_services]`, `[blush_pricing]`, `[blush_team]`, `[blush_testimonials]`, `[blush_faqs]`, `[blush_contact_form]` |
+
+The home page honours the Template chosen in Page Attributes, so **Elementor Full Width** works on Home too.
+
+Developers: use the `blush_has_builder_content` and `blush_is_builder_editing` filters to add support for another builder, and `blush_elementor_demo_elements` to change the layouts offered to Elementor.
 
 ---
 
@@ -154,28 +181,35 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for code standards and the pull r
 
 ### Roadmap
 
+**Done**
 - [x] Elementor support with editable demo layouts
+- [x] Support for Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks
 - [x] Automatic GitHub releases
-- [ ] More translations
-- [ ] Dark mode option
-- [ ] WooCommerce support for salon products
-- [ ] Native Elementor widgets for services, pricing and team
-- [ ] More page templates (gallery, blog landing)
+
+**Planned** (each links to its issue; pick one up!)
+- [ ] [More translations](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/1)
+- [ ] [Accessibility audit](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/2)
+- [ ] [Docs with screenshots and video tutorial](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/3)
+- [ ] [More page templates (gallery, blog landing)](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/4)
+- [ ] [Dark mode option](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/5)
+- [ ] [WooCommerce support for salon products](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/6)
+- [ ] [Native Elementor widgets for services, pricing and team](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/7)
+- [ ] [Contact form plugins: Contact Form 7, WPForms, Fluent Forms](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/8)
+- [ ] [SEO plugins and schema: Yoast, Rank Math](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/9)
+- [ ] [Multilingual: WPML, Polylang and RTL](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/10)
+- [ ] [Test and fix other page builders](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/11)
+- [ ] [More Elementor-editable sections](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/12)
+- [ ] [Elementor Pro Theme Builder and global styles](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/13)
+- [ ] [Block editor: theme.json and patterns](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/14)
+- [ ] [Standard theme features and Theme Check](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/15)
+- [ ] [Performance and Core Web Vitals](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/16)
+- [ ] [WordPress.org theme directory submission](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/17)
 
 Have an idea for the roadmap? Open a feature request.
 
 All participants are expected to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
----
-
-## 📄 License
-
-Blush Salon is open-source software licensed under the **[GNU General Public License v2.0 or later](LICENSE)**.
-
-- **Fonts:** Domine & Inter (SIL Open Font License 1.1)
-- **Placeholder Graphics:** GPL v2.0 or later
-
-## Releasing
+### Releasing
 
 Releases are automated with GitHub Actions (`.github/workflows/release.yml`).
 
@@ -185,26 +219,11 @@ Releases are automated with GitHub Actions (`.github/workflows/release.yml`).
 
 If the tag for the current version already exists, the push is skipped (no duplicate release).
 
-## Using page builders
+---
 
-The theme works with Elementor, Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks.
+## 📄 License
 
-### Editing the demo layouts in Elementor
+Blush Salon is open-source software licensed under the **[GNU General Public License v2.0 or later](LICENSE)**.
 
-Open a page that uses a designed template (Home, About, Services, Pricing, Contact) in Elementor for the first time. The theme loads that page's layout as real Elementor containers and widgets, so you can click and edit it:
-
-- Hero, About, CTA banner, Why Choose Us, Video banner, Vision/Mission/Motto: headings, text, buttons, icons and **images (background and collage images)** are all editable in Elementor.
-- Dynamic sections are Shortcode widgets, because their content lives in the WordPress admin: Services, Pricing Plans, Team, Testimonials, FAQs (edit under their menus; change a person's photo with the Featured Image), the booking and contact forms, partner logos and the map.
-- Nothing is saved until you click **Publish / Update**. If you leave without publishing, the page is unchanged.
-- After you publish, the page shows your Elementor content. To get the original layout back, delete all content in Elementor, publish, and reopen the page.
-
-### Other options
-
-| I want to... | Do this |
-| :--- | :--- |
-| Design a page from scratch | Set the page Template to **Elementor Full Width** (or use the default page template), then open it in your builder. |
-| Add salon modules inside a builder | Use a Shortcode widget: `[blush_booking_form]`, `[blush_services]`, `[blush_pricing]`, `[blush_team]`, `[blush_testimonials]`, `[blush_faqs]`, `[blush_contact_form]` |
-
-The home page honours the Template chosen in Page Attributes, so **Elementor Full Width** works on Home too.
-
-Developers: use the `blush_has_builder_content` and `blush_is_builder_editing` filters to add support for another builder, and `blush_elementor_demo_elements` to change the layouts offered to Elementor.
+- **Fonts:** Domine & Inter (SIL Open Font License 1.1)
+- **Placeholder Graphics:** GPL v2.0 or later
