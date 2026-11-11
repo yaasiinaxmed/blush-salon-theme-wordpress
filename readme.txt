@@ -2,7 +2,7 @@
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,13 @@ Fonts: Domine and Inter, SIL Open Font License 1.1 (see assets/fonts/LICENSE.txt
 Images: all placeholder images in assets/images were drawn for this theme (GPL v2 or later).
 
 == Changelog ==
+= 1.1.1 =
+* Fixed "the content area was not found" error when editing pages with Elementor. Templates now always call the_content() while a page builder editor is open.
+* Added support for all major page builders: Elementor, Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks.
+* The selected page template (e.g. Elementor Full Width) is now respected on the static front page.
+* Pages designed with a page builder are rendered edge to edge; other pages keep the demo layout.
+* Added automatic GitHub releases.
+
 = 1.1.0 =
 * Added full Elementor compatibility across all templates (Home, About, Services, Pricing, Contact, and Default Pages).
 * Added "Elementor Full Width" page template.
