@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BLUSH_VERSION', '1.1.1' );
+define( 'BLUSH_VERSION', '1.2.0' );
 define( 'BLUSH_DIR', get_template_directory() );
 define( 'BLUSH_URI', get_template_directory_uri() );
 

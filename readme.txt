@@ -2,7 +2,7 @@
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1.1
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,11 @@ Fonts: Domine and Inter, SIL Open Font License 1.1 (see assets/fonts/LICENSE.txt
 Images: all placeholder images in assets/images were drawn for this theme (GPL v2 or later).
 
 == Changelog ==
+= 1.2.0 =
+* Demo layouts are now fully editable in Elementor. Opening Home, About, Services, Pricing or Contact in Elementor loads the sections as real widgets (headings, text, buttons, icons, background and collage images).
+* Dynamic sections (services, pricing, team, testimonials, FAQs, forms, logos, map) are added as Shortcode widgets.
+* Nothing is saved until you click Publish/Update in Elementor.
+
 = 1.1.1 =
 * Fixed "the content area was not found" error when editing pages with Elementor. Templates now always call the_content() while a page builder editor is open.
 * Added support for all major page builders: Elementor, Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks.
