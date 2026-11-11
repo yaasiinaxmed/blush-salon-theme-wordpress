@@ -18,9 +18,8 @@ Featuring a soft pink aesthetic, native AJAX appointment booking, one-click demo
 
 ---
 
-## 🌟 Live Demo & Quick Download
+## 🌟 Quick Download
 
-- **Live Preview:** [View Live Demo Site](https://khadraidil-151609a.ingress-comporellon.ewp.live/)
 - **Download Latest Release (.zip):** [Download blush-salon.zip](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/releases/latest)
 
 > ⭐ **Like this theme?** [Give it a star](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress) so more salon owners and developers can find it.
