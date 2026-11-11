@@ -152,3 +152,13 @@ Blush Salon is open-source software licensed under the **[GNU General Public Lic
 
 - **Fonts:** Domine & Inter (SIL Open Font License 1.1)
 - **Placeholder Graphics:** GPL v2.0 or later
+
+## Releasing
+
+Releases are automated with GitHub Actions (`.github/workflows/release.yml`).
+
+1. Bump the version in `style.css` (`Version:`), `functions.php` (`BLUSH_VERSION`) and `readme.txt` (`Stable tag` + a new `= X.Y.Z =` changelog entry).
+2. Commit and push to `main`.
+3. The workflow lints the PHP, builds `blush-salon.zip`, creates the tag `vX.Y.Z` and publishes a GitHub Release using that changelog entry as notes.
+
+If the tag for the current version already exists, the push is skipped (no duplicate release).

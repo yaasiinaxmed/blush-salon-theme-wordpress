@@ -1,0 +1,86 @@
+name: Release
+
+# Runs on every push to main. If the version in style.css has no matching
+# git tag yet, it builds blush-salon.zip and publishes a GitHub Release.
+# To ship a new release: bump "Version:" in style.css (and readme.txt), then push.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read theme version
+        id: version
+        run: |
+          VERSION=$(grep -i -m1 '^Version:' style.css | sed 's/^[Vv]ersion:[[:space:]]*//' | tr -d '\r' | xargs)
+          if [ -z "$VERSION" ]; then
+            echo "::error::Could not read Version from style.css"
+            exit 1
+          fi
+          CONST=$(grep -m1 "define( 'BLUSH_VERSION'" functions.php | sed -E "s/.*'BLUSH_VERSION',[[:space:]]*'([^']+)'.*/\1/")
+          if [ "$CONST" != "$VERSION" ]; then
+            echo "::error::Version mismatch: style.css=$VERSION, functions.php BLUSH_VERSION=$CONST"
+            exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=v$VERSION" >> "$GITHUB_OUTPUT"
+          if git rev-parse -q --verify "refs/tags/v$VERSION" >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Tag v$VERSION already exists - nothing to release."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Lint PHP
+        if: steps.version.outputs.exists == 'false'
+        run: |
+          find . -name '*.php' -not -path './.git/*' -print0 | xargs -0 -n1 php -l > /dev/null
+
+      - name: Build theme zip
+        if: steps.version.outputs.exists == 'false'
+        run: |
+          mkdir -p /tmp/build/blush-salon
+          rsync -a \
+            --exclude='.git' --exclude='.github' --exclude='.gitignore' \
+            --exclude='.DS_Store' --exclude='*.zip' --exclude='node_modules' \
+            --exclude='CODE_OF_CONDUCT.md' --exclude='CONTRIBUTING.md' \
+            ./ /tmp/build/blush-salon/
+          (cd /tmp/build && zip -rq "$GITHUB_WORKSPACE/blush-salon.zip" blush-salon)
+          unzip -l blush-salon.zip | tail -1
+
+      - name: Extract release notes
+        if: steps.version.outputs.exists == 'false'
+        run: |
+          V="${{ steps.version.outputs.version }}"
+          # Section for this version from readme.txt changelog ("= X.Y.Z =")
+          awk -v v="$V" '
+            $0 ~ "^= "v" =" {f=1; next}
+            f && /^= / {exit}
+            f && /^== / {exit}
+            f {print}
+          ' readme.txt | sed -e :a -e '/^\n*$/{$d;N;ba' -e '}' > notes.md
+          if [ ! -s notes.md ]; then
+            echo "Release $V" > notes.md
+          fi
+          cat notes.md
+
+      - name: Create tag and GitHub Release
+        if: steps.version.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ steps.version.outputs.tag }}" blush-salon.zip \
+            --target "$GITHUB_SHA" \
+            --title "Blush Salon ${{ steps.version.outputs.version }}" \
+            --notes-file notes.md
