@@ -1,0 +1,5 @@
+The fonts in assets/fonts are licensed under the SIL Open Font License, Version 1.1
+(https://openfontlicense.org).
+
+Domine  - Copyright The Domine Project Authors (https://github.com/googlefonts/domine)
+Inter   - Copyright The Inter Project Authors (https://github.com/rsms/inter)

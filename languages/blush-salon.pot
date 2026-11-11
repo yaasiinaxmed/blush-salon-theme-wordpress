@@ -1,0 +1,1695 @@
+# Copyright (C) 2026 Your Name
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Blush Salon 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/blush-salon\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-11T20:11:49+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: blush-salon\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Blush Salon"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://example.com/blush-salon"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A soft pink, elegant classic PHP theme for beauty salons, spas and makeup studios. Includes a homepage with booking forms, About, Services, Pricing and Contact page templates, custom post types (services, testimonials, team, pricing plans, FAQs), Customizer options and a one-click demo content importer. No page builder needed."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Your Name"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://example.com"
+msgstr ""
+
+#: 404.php:14
+msgid "Page not found"
+msgstr ""
+
+#: 404.php:15
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:22
+msgid "Sorry, we could not find this page. It may have been moved or deleted."
+msgstr ""
+
+#: 404.php:24
+msgid "Back to the home page"
+msgstr ""
+
+#. translators: %s: number of comments.
+#: comments.php:19
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:9
+#: inc/forms.php:310
+#: inc/meta-boxes.php:164
+#: inc/post-types.php:197
+#: template-parts/section-contact.php:71
+msgid "Company"
+msgstr ""
+
+#: footer.php:10
+msgid "Support"
+msgstr ""
+
+#: footer.php:50
+#: inc/config.php:171
+msgid "Email address"
+msgstr ""
+
+#: footer.php:51
+#: inc/forms.php:250
+#: inc/forms.php:312
+#: inc/forms.php:362
+#: inc/meta-boxes.php:162
+#: inc/post-types.php:188
+#: inc/post-types.php:195
+#: inc/post-types.php:201
+#: template-parts/booking-bar.php:21
+#: template-parts/section-appointment.php:58
+#: template-parts/section-contact.php:79
+msgid "Email"
+msgstr ""
+
+#: footer.php:52
+msgid "Sign up"
+msgstr ""
+
+#: footer.php:72
+msgid "Legal links"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Front Page"
+msgstr ""
+
+#: header.php:19
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:28
+#: inc/setup.php:126
+msgid "Open menu"
+msgstr ""
+
+#: header.php:33
+msgid "Primary menu"
+msgstr ""
+
+#: header.php:45
+#: template-parts/booking-bar.php:41
+msgid "Book Now"
+msgstr ""
+
+#: inc/config.php:22
+msgid "Home: Hero"
+msgstr ""
+
+#: inc/config.php:23
+msgid "Section: Who We Are"
+msgstr ""
+
+#: inc/config.php:24
+msgid "Section: CTA Banner"
+msgstr ""
+
+#: inc/config.php:25
+msgid "Section: Services"
+msgstr ""
+
+#: inc/config.php:26
+msgid "Section: Book an Appointment"
+msgstr ""
+
+#: inc/config.php:27
+msgid "Section: Why Choose Us"
+msgstr ""
+
+#: inc/config.php:28
+msgid "Section: Testimonials"
+msgstr ""
+
+#: inc/config.php:29
+msgid "Section: Partner Logos"
+msgstr ""
+
+#: inc/config.php:30
+msgid "Section: Video Banner"
+msgstr ""
+
+#: inc/config.php:31
+msgid "About Page: Vision, Mission, Motto"
+msgstr ""
+
+#: inc/config.php:32
+msgid "About Page: Team"
+msgstr ""
+
+#: inc/config.php:33
+msgid "Pricing Page: Plans and FAQ"
+msgstr ""
+
+#: inc/config.php:34
+msgid "Contact Page: Texts and Map"
+msgstr ""
+
+#: inc/config.php:35
+msgid "Contact Details"
+msgstr ""
+
+#: inc/config.php:36
+msgid "Social Links"
+msgstr ""
+
+#: inc/config.php:37
+msgid "Inner Page Hero"
+msgstr ""
+
+#: inc/config.php:38
+msgid "Footer"
+msgstr ""
+
+#: inc/config.php:51
+msgid "Primary color (pink)"
+msgstr ""
+
+#: inc/config.php:52
+msgid "Accent color (salmon)"
+msgstr ""
+
+#: inc/config.php:53
+msgid "Blush background color"
+msgstr ""
+
+#: inc/config.php:56
+msgid "Headline"
+msgstr ""
+
+#: inc/config.php:56
+msgid "Beautiful Care for Your Hair and Body"
+msgstr ""
+
+#: inc/config.php:57
+msgid "Subtext"
+msgstr ""
+
+#: inc/config.php:57
+msgid "We are a friendly team of beauty lovers, and we are ready to look after you."
+msgstr ""
+
+#: inc/config.php:58
+#: inc/config.php:80
+#: inc/config.php:88
+#: inc/config.php:131
+#: inc/meta-boxes.php:40
+msgid "Button text"
+msgstr ""
+
+#: inc/config.php:58
+#: inc/config.php:80
+msgid "Discover More"
+msgstr ""
+
+#: inc/config.php:59
+#: inc/config.php:81
+#: inc/config.php:89
+msgid "Button link (empty = Services page)"
+msgstr ""
+
+#: inc/config.php:60
+msgid "Hero image"
+msgstr ""
+
+#: inc/config.php:63
+#: inc/config.php:85
+#: inc/config.php:92
+#: inc/config.php:99
+#: inc/config.php:117
+#: inc/config.php:137
+#: inc/config.php:152
+msgid "Small label"
+msgstr ""
+
+#: inc/config.php:63
+msgid "Who we are"
+msgstr ""
+
+#: inc/config.php:64
+#: inc/config.php:78
+#: inc/config.php:86
+#: inc/config.php:93
+#: inc/config.php:100
+#: inc/config.php:118
+#: inc/config.php:121
+#: inc/config.php:129
+#: inc/config.php:138
+#: inc/config.php:153
+#: inc/config.php:162
+msgid "Heading"
+msgstr ""
+
+#: inc/config.php:64
+msgid "A calm place to look and feel your best."
+msgstr ""
+
+#: inc/config.php:65
+#: inc/config.php:79
+#: inc/config.php:87
+#: inc/config.php:94
+#: inc/config.php:101
+#: inc/config.php:122
+#: inc/config.php:130
+#: inc/config.php:163
+msgid "Text"
+msgstr ""
+
+#: inc/config.php:65
+msgid "This is placeholder text. Write a short introduction about your salon here: who you are, what you do and why clients love to visit."
+msgstr ""
+
+#: inc/config.php:66
+msgid "Years of experience number"
+msgstr ""
+
+#: inc/config.php:67
+msgid "Years of experience label"
+msgstr ""
+
+#: inc/config.php:67
+msgid "Years of Experience"
+msgstr ""
+
+#. translators: %d: image number.
+#: inc/config.php:70
+#, php-format
+msgid "Collage image %d"
+msgstr ""
+
+#: inc/config.php:72
+msgid "Feature 1 title"
+msgstr ""
+
+#: inc/config.php:72
+msgid "Beauty Shop"
+msgstr ""
+
+#: inc/config.php:73
+msgid "Feature 1 text"
+msgstr ""
+
+#: inc/config.php:73
+msgid "Placeholder text. Tell visitors about the products you sell in your salon."
+msgstr ""
+
+#: inc/config.php:74
+msgid "Feature 2 title"
+msgstr ""
+
+#: inc/config.php:74
+#: inc/template-tags.php:243
+msgid "Makeup Artist"
+msgstr ""
+
+#: inc/config.php:75
+msgid "Feature 2 text"
+msgstr ""
+
+#: inc/config.php:75
+msgid "Placeholder text. Tell visitors about your makeup service for special days."
+msgstr ""
+
+#: inc/config.php:78
+msgid "It is Time to Shine! Try Our Makeup Now!"
+msgstr ""
+
+#: inc/config.php:79
+msgid "Placeholder text. Add one or two sentences that invite visitors to try your most popular service."
+msgstr ""
+
+#: inc/config.php:82
+msgid "Banner image"
+msgstr ""
+
+#: inc/config.php:85
+msgid "The Beauty Secret Revealed"
+msgstr ""
+
+#: inc/config.php:86
+msgid "Exclusive Services at Our Salon."
+msgstr ""
+
+#: inc/config.php:87
+msgid "Placeholder text. Describe your services in a few words. You can add, edit and remove services in the WordPress admin under Services."
+msgstr ""
+
+#: inc/config.php:88
+#: inc/config.php:131
+msgid "Discover more"
+msgstr ""
+
+#: inc/config.php:92
+msgid "Book Your Seat Today!"
+msgstr ""
+
+#: inc/config.php:93
+msgid "Transforming Beauty, One Smile at a Time"
+msgstr ""
+
+#: inc/config.php:94
+msgid "Placeholder text. Explain how booking works and how fast you will confirm the appointment."
+msgstr ""
+
+#: inc/config.php:95
+msgid "Benefits (one per line)"
+msgstr ""
+
+#: inc/config.php:95
+msgid ""
+"Friendly, trained staff\n"
+"Clean and safe tools\n"
+"Quality products\n"
+"Flexible opening hours\n"
+"Fair prices\n"
+"Relaxing atmosphere"
+msgstr ""
+
+#: inc/config.php:96
+#: inc/config.php:164
+msgid "Form title"
+msgstr ""
+
+#: inc/config.php:96
+#: inc/demo-import.php:438
+msgid "Book an Appointment"
+msgstr ""
+
+#: inc/config.php:99
+msgid "Why Choose Us"
+msgstr ""
+
+#: inc/config.php:100
+msgid "Where Beauty Meets Confidence"
+msgstr ""
+
+#: inc/config.php:101
+msgid "Placeholder text. Say in one or two sentences why clients should choose your salon."
+msgstr ""
+
+#: inc/config.php:102
+#: inc/config.php:134
+msgid "Background image"
+msgstr ""
+
+#: inc/config.php:104
+msgid "Hygiene and Safety"
+msgstr ""
+
+#: inc/config.php:105
+msgid "Professional Services"
+msgstr ""
+
+#: inc/config.php:106
+msgid "Stylish Makeovers"
+msgstr ""
+
+#: inc/config.php:107
+msgid "The Best Quality"
+msgstr ""
+
+#. translators: %d: feature number.
+#: inc/config.php:111
+#, php-format
+msgid "Feature %d title"
+msgstr ""
+
+#. translators: %d: feature number.
+#: inc/config.php:113
+#, php-format
+msgid "Feature %d text"
+msgstr ""
+
+#. translators: %d: feature number.
+#: inc/config.php:113
+msgid "Short placeholder text for this feature."
+msgstr ""
+
+#: inc/config.php:117
+#: inc/demo-import.php:118
+#: inc/post-types.php:75
+msgid "Testimonials"
+msgstr ""
+
+#: inc/config.php:118
+msgid "Customers Feedback & Reviews"
+msgstr ""
+
+#: inc/config.php:121
+msgid "Where Beauty Meets Empowerment."
+msgstr ""
+
+#: inc/config.php:122
+msgid "Placeholder text. Show the brands and partners you work with."
+msgstr ""
+
+#. translators: %d: logo number.
+#: inc/config.php:125
+#, php-format
+msgid "Logo %d"
+msgstr ""
+
+#: inc/config.php:129
+msgid "Your Path to Beauty and Relaxation"
+msgstr ""
+
+#: inc/config.php:130
+msgid "Placeholder text. Invite visitors to watch a short video about your salon."
+msgstr ""
+
+#: inc/config.php:132
+msgid "Button link (empty = About page)"
+msgstr ""
+
+#: inc/config.php:133
+msgid "Video URL (YouTube, Vimeo or .mp4). Empty = no play button."
+msgstr ""
+
+#: inc/config.php:137
+msgid "Our Value"
+msgstr ""
+
+#: inc/config.php:138
+msgid "Where Beauty Blossoms, Confidence Shines."
+msgstr ""
+
+#: inc/config.php:140
+msgid "Our Vision"
+msgstr ""
+
+#: inc/config.php:141
+msgid "Our Mission"
+msgstr ""
+
+#: inc/config.php:142
+msgid "Our Motto"
+msgstr ""
+
+#. translators: %d: card number.
+#: inc/config.php:146
+#, php-format
+msgid "Card %d title"
+msgstr ""
+
+#. translators: %d: card number.
+#: inc/config.php:148
+#, php-format
+msgid "Card %d text"
+msgstr ""
+
+#. translators: %d: card number.
+#: inc/config.php:148
+msgid "Placeholder text. Write two short sentences about this value of your salon."
+msgstr ""
+
+#: inc/config.php:152
+msgid "Meet Our Team"
+msgstr ""
+
+#: inc/config.php:153
+msgid "Teamwork makes the dream work."
+msgstr ""
+
+#: inc/config.php:156
+msgid "Pricing small label"
+msgstr ""
+
+#: inc/config.php:156
+msgid "Choose Your Package"
+msgstr ""
+
+#: inc/config.php:157
+msgid "Pricing heading"
+msgstr ""
+
+#: inc/config.php:157
+msgid "We are here to help you with all your beauty needs"
+msgstr ""
+
+#: inc/config.php:158
+msgid "FAQ small label"
+msgstr ""
+
+#: inc/config.php:158
+msgid "Common Questions"
+msgstr ""
+
+#: inc/config.php:159
+msgid "FAQ heading"
+msgstr ""
+
+#: inc/config.php:159
+msgid "Most Popular Questions"
+msgstr ""
+
+#: inc/config.php:162
+msgid "Whenever you need us, we are here for you."
+msgstr ""
+
+#: inc/config.php:163
+msgid "Placeholder text. Tell visitors the best way to reach you and when you are open."
+msgstr ""
+
+#: inc/config.php:164
+msgid "Send us a message"
+msgstr ""
+
+#: inc/config.php:165
+msgid "Form text"
+msgstr ""
+
+#: inc/config.php:165
+msgid "Fill in the form and we will reply as soon as we can."
+msgstr ""
+
+#: inc/config.php:166
+msgid "Google Maps embed URL (Google Maps > Share > Embed a map; paste the link or the whole iframe code)"
+msgstr ""
+
+#: inc/config.php:169
+msgid "Phone number"
+msgstr ""
+
+#: inc/config.php:170
+msgid "Second phone number (optional)"
+msgstr ""
+
+#: inc/config.php:172
+msgid "Address"
+msgstr ""
+
+#: inc/config.php:172
+msgid ""
+"123 Example Street\n"
+"Your City, Your Country"
+msgstr ""
+
+#: inc/config.php:173
+msgid "Send form emails to (empty = site admin email)"
+msgstr ""
+
+#: inc/config.php:176
+#: inc/meta-boxes.php:29
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/config.php:177
+#: inc/meta-boxes.php:30
+msgid "X (Twitter) URL"
+msgstr ""
+
+#: inc/config.php:178
+#: inc/meta-boxes.php:31
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/config.php:179
+#: inc/meta-boxes.php:32
+msgid "LinkedIn URL"
+msgstr ""
+
+#: inc/config.php:180
+#: inc/meta-boxes.php:33
+msgid "YouTube URL"
+msgstr ""
+
+#: inc/config.php:181
+msgid "TikTok URL"
+msgstr ""
+
+#: inc/config.php:184
+msgid "Default background image (a page Featured Image replaces it for that page)"
+msgstr ""
+
+#: inc/config.php:185
+msgid "Default subtitle"
+msgstr ""
+
+#: inc/config.php:185
+msgid "We do everything you need to look your best."
+msgstr ""
+
+#: inc/config.php:188
+msgid "Short text under the logo"
+msgstr ""
+
+#: inc/config.php:188
+msgid "Placeholder text. Add a short sentence about your salon for the footer."
+msgstr ""
+
+#: inc/config.php:189
+msgid "Newsletter title"
+msgstr ""
+
+#: inc/config.php:189
+#: inc/post-types.php:159
+msgid "Newsletter"
+msgstr ""
+
+#: inc/config.php:190
+msgid "Newsletter text"
+msgstr ""
+
+#: inc/config.php:190
+msgid "Sign up to our newsletter to get news, tips and special offers."
+msgstr ""
+
+#: inc/config.php:191
+msgid "Copyright text ({year} = current year, {site} = site name)"
+msgstr ""
+
+#: inc/config.php:191
+msgid "Copyright © {year} {site}. All rights reserved."
+msgstr ""
+
+#: inc/customizer.php:72
+msgid "Blush Salon Options"
+msgstr ""
+
+#: inc/customizer.php:73
+msgid "Texts, images and contact details used by the theme."
+msgstr ""
+
+#: inc/demo-import.php:60
+msgid "Welcome to Blush Salon!"
+msgstr ""
+
+#: inc/demo-import.php:61
+msgid "Click the button to create the demo pages (Home, About, Services, Pricing, Contact), the menus and some sample content. Nothing that already exists will be changed."
+msgstr ""
+
+#: inc/demo-import.php:62
+#: inc/demo-import.php:111
+msgid "Create demo pages & menus"
+msgstr ""
+
+#: inc/demo-import.php:63
+msgid "No thanks, hide this"
+msgstr ""
+
+#: inc/demo-import.php:85
+#: inc/demo-import.php:94
+msgid "Blush Salon Setup"
+msgstr ""
+
+#: inc/demo-import.php:98
+msgid "Demo import finished."
+msgstr ""
+
+#: inc/demo-import.php:103
+msgid "View the site"
+msgstr ""
+
+#: inc/demo-import.php:104
+msgid "Open the Customizer"
+msgstr ""
+
+#: inc/demo-import.php:108
+msgid "1. Create demo pages & menus"
+msgstr ""
+
+#: inc/demo-import.php:109
+msgid "This creates the pages Home, About Us, Services, Pricing Plan, Contact Us and Blog, sets Home as the front page, builds the header and footer menus and adds a few sample services, testimonials, team members, pricing plans and FAQs."
+msgstr ""
+
+#: inc/demo-import.php:110
+msgid "It is safe to click more than once. It never creates duplicates and never changes pages, menus or settings that already exist."
+msgstr ""
+
+#: inc/demo-import.php:114
+msgid "2. Make it yours"
+msgstr ""
+
+#: inc/demo-import.php:116
+msgid "Customizer: logo, colors, texts, images, phone, email, address, social links, map and video."
+msgstr ""
+
+#. Template Name of the theme
+#: inc/demo-import.php:117
+#: inc/demo-import.php:315
+#: inc/demo-import.php:415
+#: inc/demo-import.php:427
+#: inc/post-types.php:51
+msgid "Services"
+msgstr ""
+
+#: inc/demo-import.php:119
+#: inc/post-types.php:87
+msgid "Team"
+msgstr ""
+
+#: inc/demo-import.php:120
+#: inc/post-types.php:99
+msgid "Pricing Plans"
+msgstr ""
+
+#: inc/demo-import.php:121
+#: inc/demo-import.php:393
+#: inc/post-types.php:111
+msgid "FAQs"
+msgstr ""
+
+#: inc/demo-import.php:122
+msgid "Appointments received from the website"
+msgstr ""
+
+#: inc/demo-import.php:123
+msgid "Messages received from the contact form"
+msgstr ""
+
+#. translators: %s: page title.
+#: inc/demo-import.php:166
+#, php-format
+msgid "Page \"%s\" already exists. Not changed."
+msgstr ""
+
+#. translators: %s: page title.
+#: inc/demo-import.php:189
+#, php-format
+msgid "Could not create page \"%s\"."
+msgstr ""
+
+#. translators: %s: page title.
+#: inc/demo-import.php:193
+#, php-format
+msgid "Page \"%s\" created."
+msgstr ""
+
+#. translators: %s: menu name.
+#: inc/demo-import.php:210
+#, php-format
+msgid "Menu \"%s\" already exists. Not changed."
+msgstr ""
+
+#. translators: %s: menu name.
+#: inc/demo-import.php:215
+#, php-format
+msgid "Could not create menu \"%s\"."
+msgstr ""
+
+#. translators: %s: menu name.
+#: inc/demo-import.php:227
+#, php-format
+msgid "Menu \"%s\" created."
+msgstr ""
+
+#. translators: %s: content type name.
+#: inc/demo-import.php:282
+#, php-format
+msgid "Sample %s: some already exist. Nothing added."
+msgstr ""
+
+#. translators: 1: number of items, 2: content type name.
+#: inc/demo-import.php:300
+#, php-format
+msgid "%1$d sample %2$s added."
+msgstr ""
+
+#: inc/demo-import.php:313
+#: inc/setup.php:188
+msgid "Home"
+msgstr ""
+
+#: inc/demo-import.php:314
+#: inc/demo-import.php:414
+#: inc/demo-import.php:425
+msgid "About Us"
+msgstr ""
+
+#: inc/demo-import.php:314
+msgid "Get to know our salon and our team."
+msgstr ""
+
+#: inc/demo-import.php:315
+msgid "Everything you need to look your best."
+msgstr ""
+
+#: inc/demo-import.php:316
+#: inc/demo-import.php:404
+#: inc/demo-import.php:428
+#: inc/post-types.php:99
+msgid "Pricing Plan"
+msgstr ""
+
+#: inc/demo-import.php:316
+msgid "Simple packages with clear prices."
+msgstr ""
+
+#: inc/demo-import.php:317
+#: inc/demo-import.php:416
+#: inc/demo-import.php:439
+msgid "Contact Us"
+msgstr ""
+
+#: inc/demo-import.php:317
+msgid "We would love to hear from you."
+msgstr ""
+
+#: inc/demo-import.php:318
+#: inc/demo-import.php:407
+#: inc/demo-import.php:429
+#: index.php:10
+msgid "Blog"
+msgstr ""
+
+#: inc/demo-import.php:325
+msgid "Home is now the front page."
+msgstr ""
+
+#: inc/demo-import.php:329
+msgid "Blog is now the posts page."
+msgstr ""
+
+#: inc/demo-import.php:332
+msgid "Home is already the front page."
+msgstr ""
+
+#: inc/demo-import.php:334
+msgid "Your site already has another front page. It was not changed. You can change it in Settings > Reading."
+msgstr ""
+
+#: inc/demo-import.php:346
+msgid "services"
+msgstr ""
+
+#: inc/demo-import.php:356
+msgid "testimonials"
+msgstr ""
+
+#: inc/demo-import.php:365
+msgid "team members"
+msgstr ""
+
+#: inc/demo-import.php:384
+msgid "pricing plans"
+msgstr ""
+
+#: inc/demo-import.php:405
+#: inc/demo-import.php:426
+msgid "Our Team"
+msgstr ""
+
+#: inc/demo-import.php:406
+#: inc/demo-import.php:437
+#: inc/post-types.php:111
+msgid "FAQ"
+msgstr ""
+
+#: inc/demo-import.php:413
+msgid "Homepage"
+msgstr ""
+
+#: inc/demo-import.php:417
+msgid "Pages"
+msgstr ""
+
+#: inc/demo-import.php:460
+msgid "Placeholder social links added. Change them in the Customizer > Blush Salon Options > Social Links."
+msgstr ""
+
+#: inc/demo-import.php:475
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: inc/forms.php:44
+msgid "Leave this field empty"
+msgstr ""
+
+#: inc/forms.php:63
+#: inc/forms.php:64
+msgid "Thank you! We received your booking request and will contact you soon to confirm it."
+msgstr ""
+
+#: inc/forms.php:65
+msgid "Thank you! Your message was sent. We will reply as soon as we can."
+msgstr ""
+
+#: inc/forms.php:66
+msgid "Thank you! You are now on our newsletter list."
+msgstr ""
+
+#: inc/forms.php:69
+msgid "Please check the form. Some required fields are empty or not correct."
+msgstr ""
+
+#: inc/forms.php:70
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: inc/forms.php:71
+msgid "The form expired. Please reload the page and try again."
+msgstr ""
+
+#: inc/forms.php:72
+msgid "Too many requests. Please wait a few minutes and try again."
+msgstr ""
+
+#: inc/forms.php:73
+msgid "Sorry, something went wrong. Please try again or call us."
+msgstr ""
+
+#. translators: %s: site URL.
+#: inc/forms.php:189
+#, php-format
+msgid "Sent from the website %s"
+msgstr ""
+
+#: inc/forms.php:235
+msgid "Quick booking bar"
+msgstr ""
+
+#: inc/forms.php:235
+msgid "Booking form"
+msgstr ""
+
+#. translators: %s: visitor name.
+#: inc/forms.php:246
+#, php-format
+msgid "New appointment request from %s"
+msgstr ""
+
+#: inc/forms.php:248
+#: inc/forms.php:309
+#: inc/meta-boxes.php:161
+#: inc/post-types.php:186
+#: inc/post-types.php:194
+#: template-parts/booking-bar.php:17
+#: template-parts/section-contact.php:67
+msgid "Name"
+msgstr ""
+
+#: inc/forms.php:249
+#: inc/forms.php:311
+#: inc/meta-boxes.php:163
+#: inc/post-types.php:187
+#: inc/post-types.php:196
+#: template-parts/section-appointment.php:54
+#: template-parts/section-contact.php:75
+msgid "Phone"
+msgstr ""
+
+#: inc/forms.php:251
+#: template-parts/booking-bar.php:25
+#: template-parts/section-appointment.php:62
+msgid "Date"
+msgstr ""
+
+#: inc/forms.php:252
+#: inc/meta-boxes.php:167
+#: inc/post-types.php:190
+#: template-parts/booking-bar.php:29
+#: template-parts/section-appointment.php:66
+msgid "Time"
+msgstr ""
+
+#: inc/forms.php:253
+#: inc/meta-boxes.php:168
+#: inc/post-types.php:51
+#: inc/post-types.php:191
+#: template-parts/booking-bar.php:33
+#: template-parts/section-appointment.php:70
+msgid "Service"
+msgstr ""
+
+#: inc/forms.php:254
+#: inc/forms.php:314
+#: inc/meta-boxes.php:180
+#: inc/post-types.php:148
+#: template-parts/section-appointment.php:78
+#: template-parts/section-contact.php:87
+msgid "Message"
+msgstr ""
+
+#. translators: %s: visitor name.
+#: inc/forms.php:307
+#, php-format
+msgid "New message from %s"
+msgstr ""
+
+#: inc/forms.php:313
+#: inc/meta-boxes.php:165
+#: inc/post-types.php:198
+#: template-parts/section-contact.php:83
+msgid "Subject"
+msgstr ""
+
+#: inc/forms.php:361
+msgid "New newsletter subscriber"
+msgstr ""
+
+#: inc/meta-boxes.php:22
+msgid "Custom link (optional)"
+msgstr ""
+
+#: inc/meta-boxes.php:22
+msgid "Leave empty to link to the service page. Add a URL to send visitors somewhere else."
+msgstr ""
+
+#: inc/meta-boxes.php:25
+msgid "City or short label"
+msgstr ""
+
+#: inc/meta-boxes.php:25
+msgid "Shown under the name. The title is the client name, the main text is the quote, the featured image is the photo."
+msgstr ""
+
+#: inc/meta-boxes.php:28
+#: inc/post-types.php:204
+msgid "Role"
+msgstr ""
+
+#: inc/meta-boxes.php:28
+msgid "For example: Founder, Hair Stylist. The title is the name, the featured image is the photo."
+msgstr ""
+
+#: inc/meta-boxes.php:36
+#: inc/post-types.php:210
+msgid "Price"
+msgstr ""
+
+#: inc/meta-boxes.php:36
+msgid "With the currency sign, for example $49."
+msgstr ""
+
+#: inc/meta-boxes.php:37
+#: inc/post-types.php:211
+msgid "Period"
+msgstr ""
+
+#: inc/meta-boxes.php:37
+msgid "For example: Hourly, Per visit, Monthly."
+msgstr ""
+
+#: inc/meta-boxes.php:38
+msgid "Features"
+msgstr ""
+
+#: inc/meta-boxes.php:38
+msgid "One feature per line."
+msgstr ""
+
+#: inc/meta-boxes.php:39
+msgid "Highlight this plan"
+msgstr ""
+
+#: inc/meta-boxes.php:39
+msgid "The highlighted plan gets the pink header and a filled button."
+msgstr ""
+
+#: inc/meta-boxes.php:41
+msgid "Button link"
+msgstr ""
+
+#: inc/meta-boxes.php:41
+msgid "Leave empty to link to the booking form."
+msgstr ""
+
+#: inc/meta-boxes.php:42
+msgid "Small note under the button"
+msgstr ""
+
+#: inc/meta-boxes.php:45
+msgid "Hero subtitle"
+msgstr ""
+
+#: inc/meta-boxes.php:45
+msgid "Short line under the page title. The page Featured Image is used as the hero background."
+msgstr ""
+
+#: inc/meta-boxes.php:56
+msgid "Service details"
+msgstr ""
+
+#: inc/meta-boxes.php:57
+msgid "Testimonial details"
+msgstr ""
+
+#: inc/meta-boxes.php:58
+msgid "Team member details"
+msgstr ""
+
+#: inc/meta-boxes.php:59
+msgid "Plan details"
+msgstr ""
+
+#: inc/meta-boxes.php:60
+msgid "Page hero"
+msgstr ""
+
+#: inc/meta-boxes.php:66
+msgid "Details"
+msgstr ""
+
+#: inc/meta-boxes.php:166
+#: inc/post-types.php:189
+msgid "Appointment date"
+msgstr ""
+
+#: inc/meta-boxes.php:169
+msgid "Sent from"
+msgstr ""
+
+#: inc/meta-boxes.php:182
+#: inc/post-types.php:249
+msgid "Received"
+msgstr ""
+
+#. translators: %s: post type singular name.
+#: inc/post-types.php:25
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#. translators: %s: post type singular name.
+#: inc/post-types.php:27
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: post type singular name.
+#: inc/post-types.php:29
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#. translators: %s: post type singular name.
+#: inc/post-types.php:31
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#. translators: %s: post type plural name.
+#: inc/post-types.php:33
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#. translators: %s: post type plural name.
+#: inc/post-types.php:35
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#. translators: %s: post type plural name.
+#: inc/post-types.php:37
+#, php-format
+msgid "No %s found."
+msgstr ""
+
+#. translators: %s: post type plural name.
+#: inc/post-types.php:39
+#, php-format
+msgid "No %s found in Trash."
+msgstr ""
+
+#: inc/post-types.php:75
+msgid "Testimonial"
+msgstr ""
+
+#: inc/post-types.php:87
+msgid "Team Member"
+msgstr ""
+
+#: inc/post-types.php:137
+msgid "Appointment"
+msgstr ""
+
+#: inc/post-types.php:137
+msgid "Appointments"
+msgstr ""
+
+#: inc/post-types.php:148
+msgid "Messages"
+msgstr ""
+
+#: inc/post-types.php:159
+msgid "Subscriber"
+msgstr ""
+
+#: inc/post-types.php:207
+msgid "City / label"
+msgstr ""
+
+#: inc/post-types.php:212
+msgid "Highlighted"
+msgstr ""
+
+#: inc/post-types.php:270
+msgid "Yes"
+msgstr ""
+
+#: inc/setup.php:43
+msgid "Primary Menu (header)"
+msgstr ""
+
+#: inc/setup.php:44
+msgid "Footer: Company column"
+msgstr ""
+
+#: inc/setup.php:45
+msgid "Footer: Support column"
+msgstr ""
+
+#: inc/setup.php:46
+msgid "Footer: Bottom bar links"
+msgstr ""
+
+#: inc/setup.php:74
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/setup.php:76
+msgid "Shown next to blog posts and archives."
+msgstr ""
+
+#: inc/setup.php:84
+msgid "Footer Extra"
+msgstr ""
+
+#: inc/setup.php:86
+msgid "Optional widgets shown above the copyright bar."
+msgstr ""
+
+#: inc/setup.php:127
+msgid "Close menu"
+msgstr ""
+
+#. translators: %d: slide group number.
+#: inc/setup.php:129
+#, php-format
+msgid "Go to testimonials page %d"
+msgstr ""
+
+#: inc/setup.php:130
+#: template-parts/section-video.php:27
+msgid "Video player"
+msgstr ""
+
+#. translators: %s: menu item title.
+#: inc/setup.php:175
+#, php-format
+msgid "Open submenu of %s"
+msgstr ""
+
+#: inc/template-tags.php:101
+#: inc/template-tags.php:129
+msgid "Facebook"
+msgstr ""
+
+#: inc/template-tags.php:102
+#: inc/template-tags.php:130
+msgid "X (Twitter)"
+msgstr ""
+
+#: inc/template-tags.php:103
+#: inc/template-tags.php:131
+msgid "Instagram"
+msgstr ""
+
+#: inc/template-tags.php:104
+#: inc/template-tags.php:132
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/template-tags.php:105
+#: inc/template-tags.php:133
+msgid "YouTube"
+msgstr ""
+
+#: inc/template-tags.php:106
+#: inc/template-tags.php:134
+msgid "TikTok"
+msgstr ""
+
+#: inc/template-tags.php:204
+msgid "Hair Coloring"
+msgstr ""
+
+#: inc/template-tags.php:205
+msgid "Hair Straightening"
+msgstr ""
+
+#: inc/template-tags.php:206
+msgid "Haircut & Treatment"
+msgstr ""
+
+#: inc/template-tags.php:207
+msgid "Massage & Body Treatment"
+msgstr ""
+
+#: inc/template-tags.php:208
+msgid "Body Scrub"
+msgstr ""
+
+#: inc/template-tags.php:209
+msgid "Aromatherapy Massage"
+msgstr ""
+
+#: inc/template-tags.php:215
+msgid "Sample service. Add a short description of this service in the admin."
+msgstr ""
+
+#: inc/template-tags.php:216
+msgid "This is a sample service. Replace this text with a full description: what is included, how long it takes and who it is for."
+msgstr ""
+
+#: inc/template-tags.php:224
+msgid "Amina Yusuf"
+msgstr ""
+
+#: inc/template-tags.php:224
+#: inc/template-tags.php:227
+msgid "Regular client"
+msgstr ""
+
+#: inc/template-tags.php:225
+msgid "Sara Lind"
+msgstr ""
+
+#: inc/template-tags.php:225
+msgid "Bride"
+msgstr ""
+
+#: inc/template-tags.php:226
+msgid "Maya Chen"
+msgstr ""
+
+#: inc/template-tags.php:226
+msgid "First visit"
+msgstr ""
+
+#: inc/template-tags.php:227
+msgid "Leyla Omar"
+msgstr ""
+
+#: inc/template-tags.php:234
+msgid "This is a sample review. Replace it with real words from a happy client. Two or three short sentences work best."
+msgstr ""
+
+#: inc/template-tags.php:241
+msgid "Emily Stone"
+msgstr ""
+
+#: inc/template-tags.php:241
+msgid "Founder"
+msgstr ""
+
+#: inc/template-tags.php:242
+msgid "Hana Ali"
+msgstr ""
+
+#: inc/template-tags.php:242
+msgid "Hair Stylist"
+msgstr ""
+
+#: inc/template-tags.php:243
+msgid "Grace Obi"
+msgstr ""
+
+#: inc/template-tags.php:244
+msgid "Nora Berg"
+msgstr ""
+
+#: inc/template-tags.php:244
+msgid "Massage Therapist"
+msgstr ""
+
+#: inc/template-tags.php:258
+msgid "Basic Package"
+msgstr ""
+
+#: inc/template-tags.php:259
+msgid "Premium Package"
+msgstr ""
+
+#: inc/template-tags.php:260
+msgid "Professional Package"
+msgstr ""
+
+#: inc/template-tags.php:266
+msgid "Sample plan. Add a short description of what this package is for."
+msgstr ""
+
+#: inc/template-tags.php:268
+msgid "Hourly"
+msgstr ""
+
+#: inc/template-tags.php:269
+msgid ""
+"Sample feature one\n"
+"Sample feature two\n"
+"Sample feature three\n"
+"Sample feature four\n"
+"Sample feature five"
+msgstr ""
+
+#: inc/template-tags.php:271
+#: template-parts/section-pricing.php:20
+msgid "Get Started"
+msgstr ""
+
+#: inc/template-tags.php:273
+msgid "*Sample note. Prices and details are examples only."
+msgstr ""
+
+#: inc/template-tags.php:280
+msgid "How do I book an appointment?"
+msgstr ""
+
+#: inc/template-tags.php:281
+msgid "Can I change or cancel my booking?"
+msgstr ""
+
+#: inc/template-tags.php:282
+msgid "Which products do you use?"
+msgstr ""
+
+#: inc/template-tags.php:283
+msgid "Do you offer gift cards?"
+msgstr ""
+
+#: inc/template-tags.php:284
+msgid "How early should I arrive?"
+msgstr ""
+
+#: inc/template-tags.php:285
+msgid "Do you do bridal makeup?"
+msgstr ""
+
+#: inc/template-tags.php:286
+msgid "What are your opening hours?"
+msgstr ""
+
+#: inc/template-tags.php:287
+msgid "Which payment methods do you accept?"
+msgstr ""
+
+#: inc/template-tags.php:293
+msgid "This is a sample answer. Replace it with your own answer in the admin under FAQs."
+msgstr ""
+
+#: inc/template-tags.php:564
+#: single.php:50
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php:565
+#: single.php:51
+msgid "Next"
+msgstr ""
+
+#. Template Name of the theme
+msgid "About"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Contact"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Pricing"
+msgstr ""
+
+#: page.php:21
+#: single.php:34
+msgid "Page"
+msgstr ""
+
+#. translators: %s: search words.
+#: search.php:15
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgid "Search…"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:12
+msgid "Sidebar"
+msgstr ""
+
+#: single.php:42
+msgid "Book this service"
+msgstr ""
+
+#: single.php:45
+msgid "Tags:"
+msgstr ""
+
+#: template-parts/booking-bar.php:10
+msgid "Quick booking"
+msgstr ""
+
+#: template-parts/booking-bar.php:18
+msgid "Your name"
+msgstr ""
+
+#: template-parts/booking-bar.php:22
+msgid "you@example.com"
+msgstr ""
+
+#: template-parts/booking-bar.php:50
+msgid "Need help? Contact us"
+msgstr ""
+
+#: template-parts/content-none.php:10
+msgid "Nothing found"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "Sorry, nothing matched your search. Please try again with different words."
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "There is no content here yet."
+msgstr ""
+
+#: template-parts/content.php:24
+msgid "Read more"
+msgstr ""
+
+#: template-parts/section-appointment.php:19
+msgid "Benefits:"
+msgstr ""
+
+#: template-parts/section-appointment.php:34
+msgid "Customer Support"
+msgstr ""
+
+#: template-parts/section-appointment.php:50
+msgid "Full Name"
+msgstr ""
+
+#: template-parts/section-appointment.php:82
+msgid "Book Now!"
+msgstr ""
+
+#: template-parts/section-contact.php:23
+msgid "Head Office"
+msgstr ""
+
+#: template-parts/section-contact.php:32
+msgid "Call Us"
+msgstr ""
+
+#: template-parts/section-contact.php:45
+msgid "Email us"
+msgstr ""
+
+#: template-parts/section-contact.php:54
+msgid "Follow our social network"
+msgstr ""
+
+#: template-parts/section-contact.php:91
+msgid "Send Message"
+msgstr ""
+
+#. translators: %d: logo number.
+#: template-parts/section-logos.php:19
+#, php-format
+msgid "Partner logo %d"
+msgstr ""
+
+#: template-parts/section-map.php:10
+msgid "Map"
+msgstr ""
+
+#: template-parts/section-map.php:12
+msgid "Our location on the map"
+msgstr ""
+
+#: template-parts/section-map.php:16
+msgid "Map placeholder. Add your Google Maps embed link in Appearance > Customize > Blush Salon Options > Contact Page."
+msgstr ""
+
+#. translators: %s: plan name.
+#: template-parts/section-pricing.php:44
+#, php-format
+msgid "with %s"
+msgstr ""
+
+#: template-parts/section-services.php:41
+msgid "Learn more"
+msgstr ""
+
+#. translators: %s: team member name.
+#: template-parts/section-team.php:20
+#, php-format
+msgid "Photo of %s"
+msgstr ""
+
+#: template-parts/section-testimonials.php:18
+msgid "Customer reviews. Scroll or swipe to see more."
+msgstr ""
+
+#: template-parts/section-video.php:15
+msgid "Play video"
+msgstr ""
+
+#: template-parts/section-video.php:30
+msgid "Close video"
+msgstr ""
