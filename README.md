@@ -11,11 +11,9 @@
 Featuring a soft pink aesthetic, native AJAX appointment booking, one-click demo content setup, and **full Elementor page builder compatibility**.
 
 <p align="center">
-  <a href="docs/theme-preview.mp4">
-    <img src="docs/theme-preview.png" alt="Watch the Blush Salon theme preview video" width="800">
-  </a>
+  <img src="docs/theme-preview.gif" alt="Blush Salon theme preview" width="800">
   <br>
-  <b>▶ <a href="docs/theme-preview.mp4">Watch the 50-second preview video</a></b>
+  <sub><a href="docs/theme-preview.mp4">▶ Watch the full-quality video (MP4)</a></sub>
 </p>
 
 ---
