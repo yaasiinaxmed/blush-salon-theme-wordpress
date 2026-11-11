@@ -19,6 +19,8 @@ Featuring a soft pink aesthetic, native AJAX appointment booking, one-click demo
 - **Live Preview:** [View Live Demo Site](https://khadraidil-151609a.ingress-comporellon.ewp.live/)
 - **Download Latest Release (.zip):** [Download blush-salon.zip](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/releases/latest)
 
+> ⭐ **Like this theme?** [Give it a star](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress) so more salon owners and developers can find it.
+
 ---
 
 ## 🚀 Key Features
@@ -136,7 +138,28 @@ blush-salon/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on code standards, issue reporting, and the pull request workflow.
+Contributions of every size are welcome: code, translations, design, docs, bug reports and ideas.
+
+**Where to start**
+
+- 🌱 Browse [good first issues](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/labels/good%20first%20issue), small tasks that are easy to pick up.
+- 🙋 See [help wanted](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/labels/help%20wanted) for bigger features.
+- 🐛 Found a bug or have an idea? [Open an issue](https://github.com/yaasiinaxmed/blush-salon-theme-wordpress/issues/new/choose); templates guide you.
+- 🌍 Translate the theme: copy `languages/blush-salon.pot` and send a PR with your `.po` file.
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for code standards and the pull request workflow.
+
+### Roadmap
+
+- [x] Elementor support with editable demo layouts
+- [x] Automatic GitHub releases
+- [ ] More translations
+- [ ] Dark mode option
+- [ ] WooCommerce support for salon products
+- [ ] Native Elementor widgets for services, pricing and team
+- [ ] More page templates (gallery, blog landing)
+
+Have an idea for the roadmap? Open a feature request.
 
 All participants are expected to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
