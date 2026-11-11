@@ -1,0 +1,62 @@
+name: 🐛 Bug report
+description: Something in the theme is not working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Blush Salon! Please search existing issues first, then fill in the details below.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See the error
+    validations:
+      required: true
+  - type: input
+    id: theme-version
+    attributes:
+      label: Theme version
+      placeholder: "1.2.0"
+    validations:
+      required: true
+  - type: input
+    id: wp-version
+    attributes:
+      label: WordPress version
+      placeholder: "6.8"
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+      placeholder: "8.2"
+  - type: dropdown
+    id: builder
+    attributes:
+      label: Page builder in use
+      options:
+        - None
+        - Elementor
+        - Elementor Pro
+        - Beaver Builder
+        - Divi
+        - WPBakery
+        - Block editor (Gutenberg)
+        - Other
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, console errors or debug log
+      description: Drag and drop images here, or paste errors from the browser console or `wp-content/debug.log`.
