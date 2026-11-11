@@ -167,13 +167,22 @@ If the tag for the current version already exists, the push is skipped (no dupli
 
 The theme works with Elementor, Beaver Builder, Divi, WPBakery, SiteOrigin, Brizy and Bricks.
 
+### Editing the demo layouts in Elementor
+
+Open a page that uses a designed template (Home, About, Services, Pricing, Contact) in Elementor for the first time. The theme loads that page's layout as real Elementor containers and widgets, so you can click and edit it:
+
+- Hero, About, CTA banner, Why Choose Us, Video banner, Vision/Mission/Motto: headings, text, buttons, icons and **images (background and collage images)** are all editable in Elementor.
+- Dynamic sections are Shortcode widgets, because their content lives in the WordPress admin: Services, Pricing Plans, Team, Testimonials, FAQs (edit under their menus; change a person's photo with the Featured Image), the booking and contact forms, partner logos and the map.
+- Nothing is saved until you click **Publish / Update**. If you leave without publishing, the page is unchanged.
+- After you publish, the page shows your Elementor content. To get the original layout back, delete all content in Elementor, publish, and reopen the page.
+
+### Other options
+
 | I want to... | Do this |
 | :--- | :--- |
-| Keep the theme's demo layout and add my own content | Keep the template (Front Page, About, Services, Pricing, Contact) and open the page in your builder. Your widgets appear in the content area between the demo sections. |
-| Design a page entirely with my builder | Set the page Template to **Elementor Full Width**, or use the default page template, then open it in your builder. |
-| Replace the demo layout on a designed template | Save content in your builder. Once a page has builder content, it shows only that content, edge to edge. |
+| Design a page from scratch | Set the page Template to **Elementor Full Width** (or use the default page template), then open it in your builder. |
 | Add salon modules inside a builder | Use a Shortcode widget: `[blush_booking_form]`, `[blush_services]`, `[blush_pricing]`, `[blush_team]`, `[blush_testimonials]`, `[blush_faqs]`, `[blush_contact_form]` |
 
 The home page honours the Template chosen in Page Attributes, so **Elementor Full Width** works on Home too.
 
-Developers: use the `blush_has_builder_content` and `blush_is_builder_editing` filters to add support for another builder.
+Developers: use the `blush_has_builder_content` and `blush_is_builder_editing` filters to add support for another builder, and `blush_elementor_demo_elements` to change the layouts offered to Elementor.
