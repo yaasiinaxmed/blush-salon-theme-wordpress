@@ -23,3 +23,4 @@ require BLUSH_DIR . '/inc/customizer.php';
 require BLUSH_DIR . '/inc/forms.php';
 require BLUSH_DIR . '/inc/demo-import.php';
 require BLUSH_DIR . '/inc/elementor.php';
+require BLUSH_DIR . '/inc/elementor-demo.php';

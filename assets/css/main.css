@@ -2653,6 +2653,18 @@ body.elementor-page {
 	overflow-x: hidden;
 }
 
+/* Elementor widgets seeded from the demo layouts use the theme display font. */
+.blush-el-display .elementor-heading-title,
+.blush-el-display .elementor-icon-box-title,
+.blush-el-display .elementor-icon-box-description,
+.blush-el-display .elementor-widget-container {
+	font-family: var(--font-display);
+}
+
+.elementor-widget-icon-box.blush-el-display .elementor-icon-box-description {
+	font-family: var(--font-body);
+}
+
 .elementor-editor-active .reveal,
 .elementor-editor-preview .reveal {
 	opacity: 1 !important;
